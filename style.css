@@ -225,12 +225,7 @@ footer {
 
 @media screen and (max-width: 1360px){
     .selecao-de-personagens li {
-        width: 100%;
-        
-    }
-
-    .personagem-grande  {
-        
+        width: 100%;        
     }
 
 }
