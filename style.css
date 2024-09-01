@@ -153,7 +153,7 @@ main{
 
 li:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.1);
+    
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 
@@ -179,7 +179,7 @@ footer {
 }
 
 
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1980px){
 	
 
     .selecao-de-personagens h1 {
@@ -192,7 +192,7 @@ footer {
         margin-top: .5rem;
     }
     .selecao-de-personagens li {
-        width: 40%;
+        width: 35%;
         
     }
     
@@ -223,3 +223,21 @@ footer {
 }
 
 
+@media screen and (max-width: 1360px){
+    .selecao-de-personagens li {
+        width: 100%;
+        
+    }
+
+    .personagem-grande  {
+        
+    }
+
+}
+
+@media screen and (max-width: 1360px){
+    .selecao-de-personagens li {
+        width: 100%;
+        
+    }
+}
