@@ -1,0 +1,225 @@
+:root {
+    font-size: 62.5%;
+}
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('../fonts/MarvelRegular-Dj83.ttf') format('truetype');
+    
+}
+
+body {
+    font-family: 'Marvel';
+    
+}
+
+body::before{
+    content: '';
+    background-image: url('images/3800.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+header {
+    height: 20vh;
+    display: flex;
+
+}
+
+
+main{  
+    height: 70vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.selecao-de-personagens {
+    background-image: linear-gradient(to bottom right, #a1020285, #ff494f33);
+    width: 60%;
+    height: 80%;
+    
+}
+
+.selecao-de-personagens h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    padding: 2.4rem;
+    color: #fff;
+    margin-top: .8rem;
+}
+
+.selecao-de-personagens hr {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.personagem-selecionado {
+    border: 1px solid black;
+    width: 40%;
+    height: 80%;
+    
+}
+
+
+
+.lista-de-personagens {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.selecao-de-personagens li  {
+    width: 20%;   
+    height: 25rem;
+    border: 1px solid black;
+    margin-top: 2rem;
+    padding: 1.6rem;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.selecao-de-personagens li img {
+    height: 100%;
+}
+
+
+
+.personagem-selecionado {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    align-items: center;
+    overflow: auto;
+    
+
+}
+
+.personagem-selecionado h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    letter-spacing: 3px;
+    color: #ececec;
+}
+
+.personagem-selecionado p {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: #ececec;
+}
+
+.personagem-selecionado hr {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.personagem-grande {
+    height: 60%;
+    padding: 2rem;
+}
+
+.personagem-grande img {
+    height: 90%;
+}
+
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 30px 10px #ff6464;
+}
+
+li:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+
+}
+
+.descricao-personagem-cont {
+    padding: 3rem; 
+}
+
+.descricao-personagem-cont p {
+    font-size: 2.4rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+
+
+footer {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #cacaca;
+}
+
+
+@media screen and (max-width: 1320px){
+	
+
+    .selecao-de-personagens h1 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+        padding: 1.5rem;
+        color: #fff;
+        margin-top: .5rem;
+    }
+    .selecao-de-personagens li {
+        width: 40%;
+        
+    }
+    
+    .selecao-de-personagens  {
+        overflow: auto;
+        padding-bottom: 2rem;
+    }
+   
+    .personagem-selecionado {
+        overflow: auto;
+        padding-bottom: 2rem;
+
+    }
+
+    .personagem-selecionado p {
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        text-align: left;
+        padding: 0;
+    }
+   
+    footer {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: #cacaca;
+    }
+}
+
+
